@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>黑大-空调</title>
+	<meta name="keywords" content="黑大,空调"/>
+	<meta name="description" content="页面上独立的文字"/>
+	<meta name="author" content="公司名:www.heida.com"/>
+	<meta name="robots" content="index,follow"/>
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.png"/>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/superslide.2.1.js"></script>
+	<link href="style/lunbo.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+	<!--顶部-->
+	<div id="header">
+		<div class="h-left">
+			<img src="img/logo2.png" >
+			<h2>|黑大空调 HDKT</h2>
+		</div>
+		<div class="h-right"></div>
+	</div>
+	<!--特效-->
+	<div id="banner">
+		<div class="fullSlide">
+			<div class="bd">
+				<ul style="position: relative; width: 1200px; height: 400px;">
+					<li style="background: url(images/banner1.jpg) center 0px no-repeat rgb(226, 2, 94); position: absolute; width: 1200px; left: 0px; top: 0px; display: none;"><a href="#"></a></li>
+					<li style="background: url(images/banner2.jpg) center 0px no-repeat rgb(238, 171, 54); position: absolute; width: 1064px; left: 0px; top: 0px; display: none;"><a href="#"></a></li>
+					<li style="background: url(images/banner3.jpg) center 0px no-repeat #a9dade; position: absolute; width: 1064px; left: 0px; top: 0px; display: none;"><a href="#"></a></li>
+					<li style="background: url(images/banner4.jpg) center 0px no-repeat rgb(152, 145, 142); position: absolute; width: 1064px; left: 0px; top: 0px; display: none;"><a href="#"></a></li>
+				</ul>
+			</div>
+			<div class="hd"><ul><li class="">1</li><li class="">2</li><li class="">3</li><li class="on">4</li></ul></div>
+			<span class="prev" style="opacity: 0.5; display: none;"></span>
+			<span class="next" style="opacity: 0.5; display: none;"></span>
+		</div><!--fullSlide end-->
+		  
+		  
+		<script type="text/javascript">
+		$(".fullSlide").hover(function(){
+		    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+		},
+		function(){
+		    $(this).find(".prev,.next").fadeOut()
+		});
+		$(".fullSlide").slide({
+		    titCell: ".hd ul",
+		    mainCell: ".bd ul",
+		    effect: "fold",
+		    autoPlay: true,
+		    autoPage: true,
+		    trigger: "click",
+		    startFun: function(i) {
+		        var curLi = jQuery(".fullSlide .bd li").eq(i);
+		        if ( !! curLi.attr("_src")) {
+		            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+		        }
+		    }
+		});
+		</script>
+	</div>
+	
+	<!--导航-->	
+	<div id="nav">
+		<ul>			
+			<li><a href="index.html"><img src="img/nav-znly1.png" ></a><p><a href="#">公司简介</p></a></li>
+			<li><a href="new-product.html"><img src="img/nav-xpss2.png" ></a><p><a href="#">新品上市</p></a></li>
+			<li><a href="central air-conditioning.html"><img src="img/nav-zykt3.png" ></a><p><a href="#">中央空调</p></a></li>
+			<li><a href="discount.html"><img src="img/nav-czyh4.png" ></a><p><a href="#">超值优惠</p></a></li>
+			<li><a href="near.html"><img src="img/nav-fjzmd5.png" ></a><p><a href="#">附近专卖店</p></a></li>
+		</ul>
+	</div>
+	
+	<!--外框-->
+			
+			
+			<!--新闻-->
+			<div id="news">
+				<div class="n-left">
+					<div class="n-title">
+						<span><a href="#">>>更多</a></span><h2>黑大要闻</h2>
+					</div>
+					<div class="n-c">
+						<ul>
+							<li><span>7-20</span><a href="http://www.hlju.edu.cn/info/1043/8245.htm" title="显示全的标题">王永清书记、付宏刚校长为全校中层干部作…</a></li>
+							<li><span>7-16</span><a href="http://www.hlju.edu.cn/info/1043/8236.htm" title="显示全的标题">我校举行2021年新辅导员入职仪式暨优秀辅…</a></li>
+							<li><span>7-16</span><a href="http://www.hlju.edu.cn/info/1043/8234.htm" title="显示全的标题">校党委书记王永清率队参加黑龙江省高等教…</a></li>
+							<li><span>7-16</span><a href="http://www.hlju.edu.cn/info/1043/8235.htm" title="显示全的标题">我校召开2021年暑期研究生留校住宿安全管…</a></li>
+							<li><span>7-16</span><a href="http://www.hlju.edu.cn/info/1043/8233.htm" title="显示全的标题">我校召开期末学生工作总结大会暨暑期工作…</a></li>
+							<li><span>7-13</span><a href="http://www.hlju.edu.cn/info/1043/8224.htm" title="显示全的标题">校领导深入期末考试考场巡视</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="n-left">
+					<div class="n-title">
+						<span><a href="#">>>更多</a></span><h2>媒体黑大</h2>
+					</div>
+					<div class="n-c">
+						<ul>
+							<li><span>7-19</span><a href="https://news.cctv.com/2021/07/19/ARTI33Wt0RSWHROyZkHzij8B210719.shtml" title="显示全的标题">［央视网］【崇德向善 见贤思齐 德耀中华…</a></li>
+							<li><span>7-18</span><a href="http://www.cfgw.net.cn/2021-07/19/content_24978089.htm" title="显示全的标题">［改革网］第八届中国术语学建设暨术语与…</a></li>
+							<li><span>7-18</span><a href="https://c.m.163.com/news/a/GF6OOA2G0530U6BC.html?spss=adap_pc&referFrom=&isFromH5Share=article&spssid=50bb37f79f8632b154b07f972cdfde43&spsw=1" title="显示全的标题">［网易新闻］第八届中国术语学建设暨术语…</a></li>
+							<li><span>7-18</span><a href="http://hlj.people.com.cn/n2/2021/0714/c338554-34820251.html" title="显示全的标题">［爱国网］第八届中国术语学建设暨术语与…</a></li>
+							<li><span>7-14</span><a href="http://hlj.people.com.cn/n2/2021/0714/c338554-34820251.html" title="显示全的标题">［人民网］龙江高校举办各类活动庆祝建党…</a></li>
+							<li><span>7-14</span><a href="https://t.m.youth.cn/transfer/index/url/df.youth.cn/dfzl/202107/t20210714_13096684.htm" title="显示全的标题">［中青网］青春如火 初心如炬 | 龙江高校…</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="n-right">
+					<div class="n-title">
+						<span><a href="#">>>更多</a></span><h2>通知公告</h2>
+					</div>
+					<div class="n-c">
+						<ul>
+							<li><span>6-17</span><a href="http://www.hlju.edu.cn/info/1045/8072.htm" title="显示全的标题">	黑龙江大学2021年公开招聘教师（硕士）公…</a></li>
+							<li><span>4-02</span><a href="http://www.hlju.edu.cn/info/1045/7768.htm" title="显示全的标题">	黑龙江大学2021年引进人才公告</a></li>
+							<li><span>4-02</span><a href="http://www.hlju.edu.cn/info/1045/7767.htm" title="显示全的标题">	黑龙江大学2021年公开招聘教师（硕士）公…</a></li>
+							<li><span>4-02</span><a href="http://www.hlju.edu.cn/info/1045/7769.htm" title="显示全的标题">	黑龙江大学2021年公开招聘管理人员公告（…</a></li>
+							<li><span>4-02</span><a href="http://www.hlju.edu.cn/info/1045/7765.htm" title="显示全的标题">	黑龙江大学2021年公开招聘辅导员公告（一…</a></li>
+							<li><span>4-02</span><a href="http://www.hlju.edu.cn/info/1045/7761.htm" title="显示全的标题">	黑龙江大学诚聘海内外高层次人才</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<!--公司简介-->
+			<div id="mid">
+				<h2>公司简介</h2>
+				<p>
+					黑大空调集团成立于1941年3月。作为一家专注于空调产品的大型空调制造商，黑大空调致力于为全球消费者提供技术领先、品质卓越的空调产品。已开发出包括家用空调、商用空调在内的20大类、400个系列、7000多个品种规格的产品，能充分满足不同消费群体的各种需求；拥有技术专利14000项，其中发明专利1300项，自主研发的超低温数码多联机组、高效直流变频离心式冷水机组、多功能地暖户式中央空调、1赫兹变频空调、R290环保冷媒空调、超高效定速压缩机等一系列“国际领先”产品，填补了行业空白。
+					
+				</p>
+			</div>
+			
+			<!--连锁旗舰店开始-->
+			<div id="link">
+				<ul>
+					<h2>连锁旗舰店</h2><br>
+					<li><a href="https://www.taobao.com/"><img src="img/taobao.jpg" ></a><p><a href="#"></p></a></li>
+					<li><a href="https://www.jd.com/"><img src="./img/jingdong.jpg" ></a><p><a href="#"></p></a></li>
+					<li><a href="https://weixin.qq.com/"><img src="img/weixin.jpg" ></a><p><a href="#"></p></a></li>
+					
+				</ul>
+			</div>
+			<!--连锁旗舰店结束-->			
+			
+		
+	<!--底部-->
+	<div id="footer">
+		黑大空调电子品牌
+	</div>
+	
+</body>
+</html>
+

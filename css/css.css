@@ -1,0 +1,128 @@
+/*基本设置*/
+*{padding: 0;margin: 0;}
+@font-face {
+	font-family:"xinziti";
+	src: url(../fonts/方正隶书简体.ttf);
+}
+body{font: normal normal 14px/2 "微软雅黑";color: #333;background: #ffffff;margin: 0 auto;overflow-x: hidden;
+/*font-style: italic;
+font-weight: bold;
+font-size: 14px;
+line-height: 2em;
+font-family: "微软雅黑"*/}
+img,a img{display: block;}/*标签后面加标签，必须加空格,a img为标签选择器*/
+ul,ol,li{list-style: none;}/*逗号隔开：并集选择器*/
+a{color: #333;text-decoration: none;}/*超链接和访问后的没有下划线*/
+a:hover{text-decoration: underline;color: #a40000;}/*鼠标放上去有颜色变化*/
+/*并集选择器*/
+#header,#nav,#news,#footer{width: 1200px;margin: 0 auto;}
+/*顶部*/
+#header{width: auto;height: 40px;background: #89868f;}
+#header .h-left{width: 500px;height: auto;;float: left;}/*width固定值时写浮动，auto时overflow*/
+#header .h-left img{height: 40px;margin: 0px 30px 0px 30px;border-radius: 50%;float: left;}/*margin: 10px图像离上下左右距离都为10像素,border-radius: 50%图变成圆形*/
+#header .h-left h2{color: #fff;font-size: 20px;letter-spacing: 10px;font-family: "xinziti";}
+
+#header .h-right{width: auto;height: 100px;overflow: hidden;}
+
+/*特效*/
+#banner{width: 1200px;height: 400px;background: url(../img/banner.png) no-repeat scroll center top #d00003;background-size: 100% 100%;margin: 0px auto;}
+
+/*导航*/
+#nav{width: 1200px;height: auto;coverflow: hidden;margin: 10px auto;}
+#nav ul{background: #1E83E2;}
+#nav ul li{float: left;}
+#nav ul li img{width: 110px;height: 110px;margin: 5px 65px;opacity: 0.6;} 
+#nav ul li img:hover{width: 110px;height: 110px;margin: 5px 65px;opacity: 1;}
+#nav ul li p{line-height: 35px;text-align: center;}
+
+
+
+/*外框*/
+#box{width: 1200px;height: auto;overflow: hidden;background: #fff;margin: 0 auto;}
+
+/*新闻*/
+#news{height: auto;overflow: hidden;margin-bottom: 10px;border: 1px #ccc solid;text-indent: 2em;text-align: justify;}
+#news .n-title{width: auto;line-height: 40px;border-bottom: 1px solid #686868;}
+#news .n-title h2{color: #565656;font-weight: 600;}
+#news .n-title span{float: right;font-size: 12px;padding-right: 10px;} /*右边的更多*/
+#news .n-c{padding: 5px;}
+#news .n-c ul{}
+#news .n-c ul li{line-height: 35px;border-bottom: 1px dashed #ccc;} /*下滑虚线*/
+#news .n-c ul li a:hover{color: #d07124;}
+#news .n-c ul li span{float: right;}
+
+
+
+#news .n-left{width: 390px;margin-right: 10px;height: auto;float: left;}
+#news .n-right{width: 400px;height: auto;float: right;}
+
+
+/*公司简介*/
+#mid{width: 1200px;height: auto;background: #d5d5d5;line-height: 1.5em;padding: 10px 0 ;color: #000000;font-size: 12px;overflow: hidden;margin: 0 auto;}
+#mid h2{text-align: center;}
+#mid span{float: right;}
+#mid p{font-size: 17px;text-indent: 2em; line-height: 35px;text-align: left;}
+
+
+
+/*快速通道*/
+#link{width: 1200px;height: auto;overflow: hidden;margin: 10px auto;}
+#link ul{}
+#link ul li{width: 400px;float: left;}
+#link ul h2{text-align: center;}
+#link ul li img{width: 50px;height: 50px;margin: 5px 175px;} 
+#link ul li p{line-height: 20px;text-align: center;}
+
+
+/*底部*/
+#footer{width: auto;height: auto;background: #89868f;line-height: 1.5em;padding: 10px 0 ;text-align: center;color: #fff;font-size: 12px;}
+
+/*外框*/
+#box{width: 1200px;height: auto;overflow: hidden;background: #bdbdbd;margin: 0 auto;}
+
+/*中央空调图片展示*/
+#pic-central{width: 1200px;height: 400px;overflow: hidden;margin: 0 auto;background: #cecece;}
+#pic-central .n-left{}
+#pic-central .n-left ul{}
+#pic-central .n-left ul li{width: 360px;height: 400px;float: left;}
+#pic-central .n-left ul li img{width: 360px;height: 400px;opacity: 0.8;float: right;}
+#pic-central .n-left ul li img:hover{width: 360px;height: 400px;opacity: 1;float: right;}
+
+
+#pic-central .n-middle{width: 480px;height: 400px;float:left;}
+#pic-central .n-middle.n-m-top{}
+#pic-central .n-middle.n-m-top ul{}
+#pic-central .n-middle.n-m-top ul li{width: 480px;height: 400px;float: left;}
+#pic-central .n-middle.n-m-top ul li img{width: 480px;height: 200px;opacity: 0.8;float: left;}
+#pic-central .n-middle.n-m-top ul li img:hover{width: 480px;height: 200px;opacity: 1;float: left;}
+
+#pic-central .n-middle.n-m-down{}
+#pic-central .n-middle.n-m-down ul{}
+#pic-central .n-middle.n-m-down ul li{width: 480px;height: 400px;float: bottom;}
+#pic-central .n-middle.n-m-down ul li img{width: 480px;height: 200px;opacity: 0.8;float: right;}
+#pic-central .n-middle.n-m-down ul li img:hover{width: 480px;height: 200px;opacity: 1;float: right;}
+
+#pic-central .n-right{width: 360px;height: 300px;float: right;}
+#pic-central .n-right{}
+#pic-central .n-right ul{}
+#pic-central .n-right ul li{width: 360px;height: 400px;float: left;}
+#pic-central .n-right ul li img{width: 360px;height: 400px;opacity: 0.8;float: right;}
+#pic-central .n-right ul li img:hover{width: 360px;height: 400px;opacity: 1;float: right;}
+
+
+/*
+#pic{width: 1200px;height: auto;overflow: hidden;margin: 0 auto;}
+
+#pic .p-title{width: auto;line-height: 40px;border-bottom: 1px solid #686868;}
+#pic .p-title h2{color: #565656;font-weight: 600;margin-left: 10px;}
+#pic .p-title span{float: right;font-size: 12px;padding-right: 10px;} 
+
+#pic .p-c{}
+#pic .p-c ul{}
+#pic .p-c ul li{margin: 10px;width: 280px;float: left;}
+#pic .p-c ul li img{width: 280px;height: 200px;opacity: 0.7;} 
+#pic .p-c ul li img:hover{width: 280px;height: 200px;opacity: 1;} 
+
+#pic .p-c ul li p{line-height: 30px;text-align: center;}
+*/
+

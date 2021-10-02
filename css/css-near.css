@@ -1,0 +1,70 @@
+/*基本设置*/
+*{padding: 0;margin: 0;}
+@font-face {
+	font-family:"xinziti";
+	src: url(../fonts/方正隶书简体.ttf);
+}
+body{font: normal normal 14px/2 "微软雅黑";color: #333;background: #ffffff;margin: 0 auto;overflow-x: hidden;
+/*font-style: italic;
+font-weight: bold;
+font-size: 14px;
+line-height: 2em;
+font-family: "微软雅黑"*/}
+img,a img{display: block;}/*标签后面加标签，必须加空格,a img为标签选择器*/
+ul,ol,li{list-style: none;}/*逗号隔开：并集选择器*/
+a{color: #333;text-decoration: none;}/*超链接和访问后的没有下划线*/
+a:hover{text-decoration: underline;color: #a40000;}/*鼠标放上去有颜色变化*/
+/*并集选择器*/
+#header,#nav,#news,#footer{width: 1200px;margin: 0 auto;}
+/*顶部*/
+#header{width: auto;height: 40px;background: #89868f;}
+#header .h-left{width: 500px;height: auto;;float: left;}/*width固定值时写浮动，auto时overflow*/
+#header .h-left img{height: 40px;margin: 0px 30px 0px 30px;border-radius: 50%;float: left;}/*margin: 10px图像离上下左右距离都为10像素,border-radius: 50%图变成圆形*/
+#header .h-left h2{color: #fff;font-size: 20px;letter-spacing: 10px;font-family: "xinziti";}
+
+#header .h-right{width: auto;height: 100px;overflow: hidden;}
+
+/*宣传标语*/
+#slogan{width: 1200px;height: auto;background: #4d528f;line-height: 1.5em;padding: 10px 0 ;text-align: center;color: #fff;font-size: 12px;margin: 10px auto;}
+
+
+
+/*导航*/
+#nav{width: 1200px;height: auto;coverflow: hidden;margin: 10px auto;}
+#nav ul{background: #1E83E2;}
+#nav ul li{float: left;}
+#nav ul li img{width: 110px;height: 110px;margin: 5px 65px;opacity: 0.6;} 
+#nav ul li img:hover{width: 110px;height: 110px;margin: 5px 65px;opacity: 1;}
+#nav ul li p{line-height: 35px;text-align: center;}
+
+/*外框*/
+#box1{width: 1200px;height: auto;overflow: hidden;background: #ffffff;margin: 0 auto;}
+
+/*服务*/
+#service{width: 1000px;height: auto;coverflow: hidden;margin: 10px auto;}
+#service ul{background: #1E83E2;}
+#service ul li{float: left;}
+#service ul li img{width: 50px;height: 50px;margin: 5px 75px;border-radius: 50%;} 
+
+#service ul li p{line-height: 35px;text-align: center;margin-bottom: 20px;}
+
+#news2 {width: 1200px;height: auto;overflow: hidden;margin-bottom: 10px;line-height: 40px;border-bottom: 1px solid #686868;border-top: 1px solid #686868;}
+#news2  h2{color: #565656;font-weight: 600;font-size: 15px;}
+#news2 span{float: right;font-size: 16px;padding-right: 10px;} 
+
+/*快速通道*/
+#link{width: 1200px;height: auto;overflow: hidden;margin: 10px auto;}
+#link ul{}
+#link ul li{width: 400px;float: left;}
+#link ul h2{text-align: center;}
+#link ul li img{width: 50px;height: 50px;margin: 5px 175px;} 
+#link ul li p{line-height: 20px;text-align: center;}
+
+
+/*底部*/
+#footer{width: auto;height: auto;background: #89868f;line-height: 1.5em;padding: 10px 0 ;text-align: center;color: #fff;font-size: 12px;}
+
+
+
+
+
